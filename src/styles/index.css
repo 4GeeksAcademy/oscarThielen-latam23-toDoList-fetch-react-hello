@@ -1,12 +1,75 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#bcff9f, #368bf4);
+}
 
-/* 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+h1{
+  border-radius: 12%;
+  background: linear-gradient(#f44336, #ffaa9f);
+  margin: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-family: cursive;
+}
 
-*/
+input {
+  padding: 10px;
+  width: 300px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: cursive;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: cursive;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: cursive;
+}
+span{
+  font-family: cursive;
+  font-size: large;
+}
