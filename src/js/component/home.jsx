@@ -40,21 +40,27 @@ const Home = () => {
           onChange={handleChange}
           onKeyDown={handleKeyDown}
         />
-        <ul>
-          {list.map((item, index) => (
-            <li
-              key={index}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            >
-              {item}
-              {hoverIndex === index && (
-                <button onClick={() => handleDelete(index)}>x</button>
-              )}
-            </li>
-          ))}
-        </ul>
-        <span>{list.length} task pending</span>
+        {list.length === 0 ? (
+          <p>There are no tasks, add one</p>
+        ) : (
+          <>
+            <ul>
+              {list.map((item, index) => (
+                <li
+                  key={index}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {item}
+                  {hoverIndex === index && (
+                    <button onClick={() => handleDelete(index)}>x</button>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <span>{list.length} task pending</span>
+          </>
+        )}
       </div>
     </div>
   );
